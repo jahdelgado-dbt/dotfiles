@@ -8,8 +8,8 @@ export PATH="$HOME/.local/bin:$PATH"
 alias dispatch="claude --plugin-dir ~/dispatch"
 
 
-# Pip-Boy 3000 phosphor prompt
+# ctOS prompt
 autoload -U colors && colors
-PROMPT='%F{green}[ROBCO/%n] %~%f
-%F{green}>%f '
-RPROMPT='%F{green}%*%f'
+PROMPT='%F{cyan}[ctOS/%n]%f %F{blue}%~%f
+%F{cyan}>_%f '
+RPROMPT='%F{blue}%*%f'

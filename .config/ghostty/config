@@ -1,46 +1,46 @@
-# Pip-Boy 3000 — Ghostty theme
-# Phosphor green on black with CRT shader.
+# ctOS — Watch Dogs terminal theme
+# Cold electric cyan on near-black navy.
 
 font-family = VT323
 font-size = 18
 adjust-cell-height = 10%
 
 # Core colors
-background = 0a0e0a
-foreground = 00ff41
-cursor-color = 00ff41
+background = 080c14
+foreground = a8d8ea
+cursor-color = 00d4ff
 cursor-style = block
 cursor-style-blink = true
-selection-background = 00ff41
-selection-foreground = 0a0e0a
+selection-background = 00d4ff
+selection-foreground = 080c14
 
-# Monochrome green palette — every ANSI slot mapped to a phosphor shade.
-palette = 0=#0a0e0a
-palette = 1=#00cc33
-palette = 2=#00ff41
-palette = 3=#aaff66
-palette = 4=#00aa2b
-palette = 5=#00ee3d
-palette = 6=#33ff66
-palette = 7=#aaffaa
-palette = 8=#445544
-palette = 9=#00dd38
-palette = 10=#22ff55
-palette = 11=#ccffaa
-palette = 12=#00bb30
-palette = 13=#00ff44
-palette = 14=#55ff77
-palette = 15=#ccffcc
+# ctOS 16-color palette
+palette = 0=#080c14
+palette = 1=#ff4d4d
+palette = 2=#00d4ff
+palette = 3=#ffaa00
+palette = 4=#0077b6
+palette = 5=#7b2d8b
+palette = 6=#00b4d8
+palette = 7=#a8d8ea
+palette = 8=#1a2233
+palette = 9=#ff6b6b
+palette = 10=#33e0ff
+palette = 11=#ffcc44
+palette = 12=#48cae4
+palette = 13=#c77dff
+palette = 14=#90e0ef
+palette = 15=#e0f7ff
 
 # Window chrome
-background-opacity = 0.95
-background-blur-radius = 20
+background-opacity = 0.96
+background-blur-radius = 16
 window-padding-x = 18
 window-padding-y = 14
 window-padding-balance = true
 window-theme = dark
 macos-titlebar-style = hidden
 
-# CRT shader
+# ctOS digital shader
 custom-shader = ~/.config/ghostty/shaders/pipboy-crt.glsl
 custom-shader-animation = true
