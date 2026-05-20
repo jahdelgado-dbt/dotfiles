@@ -1,0 +1,46 @@
+# Pip-Boy 3000 — Ghostty theme
+# Phosphor green on black with CRT shader.
+
+font-family = VT323
+font-size = 18
+adjust-cell-height = 10%
+
+# Core colors
+background = 0a0e0a
+foreground = 00ff41
+cursor-color = 00ff41
+cursor-style = block
+cursor-style-blink = true
+selection-background = 00ff41
+selection-foreground = 0a0e0a
+
+# Monochrome green palette — every ANSI slot mapped to a phosphor shade.
+palette = 0=#0a0e0a
+palette = 1=#00cc33
+palette = 2=#00ff41
+palette = 3=#aaff66
+palette = 4=#00aa2b
+palette = 5=#00ee3d
+palette = 6=#33ff66
+palette = 7=#aaffaa
+palette = 8=#445544
+palette = 9=#00dd38
+palette = 10=#22ff55
+palette = 11=#ccffaa
+palette = 12=#00bb30
+palette = 13=#00ff44
+palette = 14=#55ff77
+palette = 15=#ccffcc
+
+# Window chrome
+background-opacity = 0.95
+background-blur-radius = 20
+window-padding-x = 18
+window-padding-y = 14
+window-padding-balance = true
+window-theme = dark
+macos-titlebar-style = hidden
+
+# CRT shader
+custom-shader = ~/.config/ghostty/shaders/pipboy-crt.glsl
+custom-shader-animation = true

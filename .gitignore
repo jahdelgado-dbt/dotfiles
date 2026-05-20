@@ -1,0 +1,63 @@
+# Deny-by-default. Anything tracked must be explicitly un-ignored below.
+# This protects against accidentally committing secrets if you ever drop a
+# new file or directory into the repo without thinking.
+*
+
+# Allow this gitignore itself and the directory walk to traverse.
+!.gitignore
+!*/
+
+# Repo docs / scripts.
+!README.md
+!install.sh
+
+# Tracked dotfiles. Add new entries here when you start tracking more.
+!.zshrc
+!.zprofile
+!.gitconfig
+!.config/git/ignore
+!.config/ghostty/config
+!.config/ghostty/shaders/*.glsl
+!.claude/settings.json
+
+# Belt-and-suspenders denies — even if someone un-ignores a parent, never
+# let these names through.
+.claude.json
+.claude.json.backup
+.claude/settings.local.json
+.claude/sessions/
+.claude/projects/
+.claude/history.jsonl
+.claude/policy-limits.json
+.claude/remote-settings.json
+.claude/mcp-needs-auth-cache.json
+.claude/cache/
+.claude/backups/
+.claude/downloads/
+.claude/plugins/
+.claude/scheduled-tasks/
+.claude/session-env/
+.claude/shell-snapshots/
+.claude/file-history/
+.claude/telemetry/
+.claude/tasks/
+.claude/plans/
+.ssh/
+.kube/
+.tsh/
+.dbt/
+.aws/
+.gnupg/
+.netrc
+.pg_service.conf
+.zsh_history
+.zsh_sessions/
+.npm/
+.cache/
+.DS_Store
+*.pem
+*.key
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
